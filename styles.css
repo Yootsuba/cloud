@@ -186,4 +186,10 @@ button {
     .kazuma{
         translate: 200px 0;
     }
+
+}
+@media (max-width: 380px){
+    .kazuma{
+        translate: 140px 0;
+    }
 }
