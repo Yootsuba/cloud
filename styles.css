@@ -1,0 +1,189 @@
+p {
+    color: aliceblue;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.clo{
+    color: aliceblue;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    translate: -200px 0;
+}
+
+li {
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.accounts {
+    text-decoration: none;
+    color: rgb(249, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200px;
+    font-size: large;
+    letter-spacing: normal;
+    translate: -20px 0;
+
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#header {
+    background: linear-gradient(#0E0EE9, #5A5ACB);
+    left: 20%;
+    border-color: #01017a;
+    border-style: hidden;
+    /*background-image: url(background_4_-header.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    transform: background 0.8s ease, backdrop-filter 0.4s ease;
+}
+
+
+body {
+    background: linear-gradient(90deg, #06063d, #0505ad);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+    animation: grandientMone 5s ease infinite;
+}
+
+div {
+    justify-content: right;
+}
+
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+/* كازوما من اجل التعديل على الايقونة في الهيدر */
+.kazuma {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    translate: 20px 0;
+}
+
+.iw1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    direction: ltr;
+
+}
+
+.name0 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    word-spacing: 50%;
+    translate: -20px 0;
+}
+
+.icon1 {
+    width: 60px;
+    height: 70px;
+    position: relative;
+    top: 20px;
+}
+
+.mn1 {
+    font-size: small;
+}
+
+.mn2 {
+    font-size: small;
+}
+
+#header.scrolled {
+    background: rgba(11, 31, 81, 0.4);
+    backdrop-filter: blur(60px);
+}
+
+.inom {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* للهواتف */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    .clo{
+        translate: -20px 0 ;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .kazuma{
+        translate: 200px 0;
+    }
+}
